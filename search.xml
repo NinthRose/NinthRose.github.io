@@ -4,6 +4,133 @@
   
     
     <entry>
+      <title>cs224n</title>
+      <link href="/2026/04/13/model/cs224n/"/>
+      <url>/2026/04/13/model/cs224n/</url>
+      
+        <content type="html"><![CDATA[<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><p><a href="https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click">video</a></p><p><a href="https://github.com/HZCU-HPC-Team/CS224N-Spring.git">git-1</a></p><p><a href="https://github.com/0voice/Awesome-CS-OpenCourse">git-2</a></p><h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Stanford </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RRF倒数排名融合</title>
+      <link href="/2026/04/13/model/RRF/"/>
+      <url>/2026/04/13/model/RRF/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Reciprocal-Rank-Fusion"><a href="#Reciprocal-Rank-Fusion" class="headerlink" title="Reciprocal Rank Fusion"></a>Reciprocal Rank Fusion</h2><p>RAG主要分为两个大的阶段：检索、生成 。</p><p>其中检索阶段的常见方法有：关键词检索（BM25）和语义检索（基于嵌入的向量搜索），还有一种结合多种不同检索方法的混合检索（Hybrid Retrieval）。</p><p>这时候就需要一种方法来综合这些结果，这就是 排序融合 (Rank Fusion) ，其中最有效且广泛应用的方法之一是倒数排名融合。</p><p>RRF是一种简单但非常有效的排序融合算法。它的核心思想是：我们不关心原始分数是多少，只关心一个文档在各个列表中的“排名位置”。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> model </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大模型应用开发学习</title>
+      <link href="/2026/04/13/model/model/"/>
+      <url>/2026/04/13/model/model/</url>
+      
+        <content type="html"><![CDATA[<h2 id="RAG-—-检索增强生成（Retrieval-Augmented-Generation）"><a href="#RAG-—-检索增强生成（Retrieval-Augmented-Generation）" class="headerlink" title="RAG —-检索增强生成（Retrieval Augmented Generation）"></a>RAG —-检索增强生成（Retrieval Augmented Generation）</h2><p>总结：RAG &#x3D; 检索技术 + LLM 提示</p><p>通过自有垂域数据库检索相关信息，然后合并成为提示模板，给大模型润色生成回答。</p><p>知识的局限性：大模型自身的知识完全源于训练数据，而现有的主流大模型（deepseek、文心一言、通义千问…）的训练集基本都是构建于网络公开的数据，对于一些实时性的、非公开的或私域的数据是没有。<br>幻觉问题：所有的深度学习模型的底层原理都是基于数学概率，模型输出实质上是一系列数值运算，大模型也不例外，所以它经常会一本正经地胡说八道，尤其是在大模型自身不具备某一方面的知识或不擅长的任务场景。<br>数据安全性：对于企业来说，数据安全至关重要，没有企业愿意承担数据泄露的风险，尤其是大公司，没有人将私域数据上传第三方平台进行训练会推理。这也导致完全依赖通用大模型自身能力的应用方案不得不在数据安全和效果方面进行取舍。</p><p>而RAG就是解决上述问题的有效方案。</p><ul><li>开发框架<ul><li>langchain,llamaIndex,autogpt等</li></ul></li><li>Embedding模型<ul><li>BERT 属于动态（上下文相关）嵌入，因为它会根据上下文实时生成不同的向量；Word2Vec、GloVe 是静态嵌入。</li></ul></li><li>大模型API</li><li>向量数据库</li><li>faiss，weaviate等</li><li>排序模型</li><li>prompts优化</li></ul><h2 id="Agent"><a href="#Agent" class="headerlink" title="Agent"></a>Agent</h2><ul><li>开发框架<ul><li>langchain,llamaIndex,autogpt等</li></ul></li><li>数据库</li><li>这里有向量数据库，有普通的关系型数据库和缓存数据库</li><li>function call<ul><li>或者新出的mcp</li></ul></li><li>prompts优化</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> model </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>保持自己的主体性的一些方式</title>
+      <link href="/2026/04/10/tattle/diary/20260410/"/>
+      <url>/2026/04/10/tattle/diary/20260410/</url>
+      
+        <content type="html"><![CDATA[<ul><li>那是你的看法，我不这么认为。</li><li>我需要时间考虑，现在没有办法答复你。</li><li>你要是继续用这种语气，咱们就别聊了。</li><li>请直接说你的意思，别绕弯子。</li><li>我的感受是真实的，不需要你来批准。</li><li>这是你的问题，不是我的。</li><li>我们聊的是事情，不是人。</li><li>你好像有点激动，要不先冷静一下?</li><li>我做这个决定，不需要所有人理解。</li><li>你记错了，当时不是那样。</li><li>现在这个状态不适合聊，改天再说吧。</li><li>听起来你对我有很多期待，但那是你的事。</li><li>我们立场不同，不必强求共识。</li><li>你这句话逻辑不通。</li><li>这件事我们已经聊过了，不想再重复。</li><li>你的建议不错，但不太适合我。</li><li>我们就各自保留意见吧。</li><li>我觉得被冒犯了，请停止。</li><li>你答应过的事，希望你能做到。</li><li>我不接受这样的比较。</li><li>你似乎对我私人生活很感兴趣?</li><li>我们不太熟，这些问题不太方便回答。</li><li>你非要这么理解，我也没办法。</li><li>这是最后一次提醒，请保持距离。</li><li>我们能回到主题吗?</li><li>你好像总想替我做决定?</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常碎语 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tattle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>认识，认知与践行</title>
+      <link href="/2026/03/30/tattle/diary/20260330/"/>
+      <url>/2026/03/30/tattle/diary/20260330/</url>
+      
+        <content type="html"><![CDATA[<h2 id="不要用别人的错误惩罚自己"><a href="#不要用别人的错误惩罚自己" class="headerlink" title="不要用别人的错误惩罚自己"></a>不要用别人的错误惩罚自己</h2><p>劝了自己二十年，才发现自己根本没做到。</p><ul><li>认识<ul><li>大家都明白很多道理，但不完全认同的道理。</li></ul></li><li>认知<ul><li>自己认为是对的道理。</li></ul></li><li>践行<ul><li>自己认为对的，但是自己做不到的道理。</li></ul></li></ul><p>同样的，别人也有不完全认同的大道理，别人也有认为什么是对的，但是做不到的道理。不要试图帮助别人解决不属于自己的课题。</p><h2 id="行为模式"><a href="#行为模式" class="headerlink" title="行为模式"></a>行为模式</h2><p>就拿自己来说吧，讨好型人格在我很小很小的时候，是我能找到的、唯一能保护自己的方法。</p><p>小时候只有乖乖听话、会察言观色、顺着爸妈的心意来，家里才能有片刻安生，她才能少挨几句骂，甚至能换来一点难得的夸奖和好吃的。我们每个人处事反应，都不是凭空长出来的，都是小时候跟爸妈在一起的过程里，一点点地磨出来的。对当年那个小小的、什么都做不了的、全靠爸妈才能活下去的小孩来说，讨好别人、看人脸色这些，根本算不上什么缺点，那是我能找到的、唯一能躲开伤害、换来一点点疼爱的办法，那已经是当时能拿出来的、最好的选择了。</p><p>但要清楚的认识到，level up，这个方式已经不再有用，自立催生自尊和自爱。（自爱这里先不展开讨论）</p><p>不自尊的表现：经常讨厌自己跟谁相处都下意识先看对方脸色和语气：是不是我哪里做错了？哪怕明明是对方的问题，也会先低头道歉。她总骂自己懦夫。</p><p>说是习惯也好，说是舒适区也罢，确实是非常非常难改的。</p><p>好不容易在几个特定的场景下改了一部分，在应急场景下突发事件下一下就退行到原始状态。（身体自认为的自我保护状态）</p><p>但要清醒的认识和坚决的执行。</p><p>如何做呢：嘴只用来吃饭，多思考，少说话，无意义的话不要说，自身的能量放在自己身上用。</p><p>有时候在朋友当中就会更随意自在些，退行到舒适区中。</p><h2 id="他人即地狱"><a href="#他人即地狱" class="headerlink" title="他人即地狱"></a>他人即地狱</h2><p>不是别人有多坏，是你对他人认可的期待，是枷锁，是着相，是自己给自己带的帽子。</p><p>把握自我定义权利，坦然面对他人评价，非客体（他我），抓主体（自我）。</p><h2 id="逆火效应"><a href="#逆火效应" class="headerlink" title="逆火效应"></a>逆火效应</h2><p>认知的闭环比无知更可怕。</p><p>那如何避免自己陷入死胡同呢。</p><ul><li>认知傲慢</li><li>虚假共识<ul><li>自己的良方，不适用于其他人。</li></ul></li><li>认知吝啬<ul><li>懒得对他人的课题了解这么深</li></ul></li></ul><p>落在你头上的导弹，不过是别人眼里的流星。</p><h4 id="孤独是深刻者的宿命？"><a href="#孤独是深刻者的宿命？" class="headerlink" title="孤独是深刻者的宿命？"></a>孤独是深刻者的宿命？</h4><h2 id="认知失调"><a href="#认知失调" class="headerlink" title="认知失调"></a>认知失调</h2><p>感知到认知片面时，应该如何做？</p><p>偏见壁垒需要自己打破。</p><p>打破自己的认知需要重构的能量。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常碎语 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tattle </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>念念碎碎</title>
       <link href="/2026/03/13/tattle/diary/20260313/"/>
       <url>/2026/03/13/tattle/diary/20260313/</url>
